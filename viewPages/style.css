@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    outline: 50px solid rgb(71, 25, 20);
+    outline-offset: -10px;
+    -moz-outline-radius: 100px;
+    background-color: rgb(251, 206,151);
+}
+
+.gridContainer{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20px 0.3fr 0.2fr;
+
+}
+
+.darkMode{
+    background-color: rgb(143, 112, 36);
+    align-self: start;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    z-index: -1;
+    padding: 5px;
+}
+
+.containerImage-logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.heroName{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#heroName__input{
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    grid-row: 2/5;
+    grid-column: 2/5;
+    border: none;
+    order: 5;
+    border: none;
+    border-bottom: 2px solid rgb(71, 25, 20);
+    background-color: rgba(143, 113, 36, 0);
+}
+
+#heroName__input::placeholder{
+    text-align: center;
+    font-size: 170%;
+}
+
+.containerButton{
+    display: grid;
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-template-columns: repeat(3, 0.5fr);
+}
+
+.containerButton__login{
+    justify-self: center;
+    align-self: center;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    border: 0;
+    border-radius: 0;
+    padding: 7%;
+    background-color: #ffffff00;
+    font-size: 200%;
+    font-family: "Munchkin";
+}
+
+footer{
+    position: relative;
+    bottom: 20%;
+    justify-self: center;
+    align-self: end;
+    z-index: -9999;
+}
+
+@font-face{
+    font-family: "Munchkin";
+    src: url("./fonts/Munchkin.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
