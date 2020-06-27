@@ -50,10 +50,14 @@ body{
     grid-column: 2/5;
     border: none;
     order: 5;
+    border: none;
+    border-bottom: 2px solid rgb(71, 25, 20);
+    background-color: rgba(143, 113, 36, 0);
 }
+
 #heroName__input::placeholder{
     text-align: center;
-    font-size: 200%;
+    font-size: 170%;
 }
 
 .containerButton{
@@ -70,6 +74,9 @@ body{
     border: 0;
     border-radius: 0;
     padding: 7%;
+    background-color: #ffffff00;
+    font-size: 200%;
+    font-family: "Munchkin";
 }
 
 footer{
@@ -78,4 +85,11 @@ footer{
     justify-self: center;
     align-self: end;
     z-index: -9999;
+}
+
+@font-face{
+    font-family: "Munchkin";
+    src: url("./fonts/Munchkin.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
 }
